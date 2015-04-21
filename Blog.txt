@@ -1,0 +1,64 @@
+HOME
+Header:
+Home - View all posts - Search - Add post - About - Sign in / Register / Profile
+
+Header                           |Posts sorted by date Desc.
+Paragraph                        |
+Posted on dd-mm-yyyy by XXX      |Most popular tags:
+Seen by N people                 |tag1
+Comment*                         |tag2 .. tagN
+
+Footer:
+Privacy - Terms of Use - Contact
+
+================================================================
+
+COMMENT
+Name
+Email (Optional)
+Comment
+
+================================================================
+
+VIEW ALL POSTS
+
+Post 1
+Post 2
+Post 3
+...
+Post 10
+
+1-2-3...N
+
+================================================================
+
+SEARCH
+by tagname
+
+================================================================
+
+ADD POST
+Title
+Content
+Tags
+
+================================================================
+
+ABOUT
+bla bla bla
+
+================================================================
+
+SIGN IN / REGISTER
+Email      |Username
+Password   |Email
+           |Passowrd
+           |Confirm Password
+
+================================================================
+
+PROFILE
+Username
+Registered on dd-mm-yyyy
+Posts: N (view my posts*)
+Comments: N
