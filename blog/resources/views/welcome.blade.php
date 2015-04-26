@@ -10,6 +10,14 @@
             <div id="subtitle" class="specElite">
                 Some shitty content.
             </div>
+            <div id="subtitle" class="specElite">
+                {{ isset(Auth::user()->name) ? 'Hello ' . Auth::user()->name : 'Welcome Stranger!'}}
+            </div>
+            <div id="subtitle" class="specElite">
+                <a href="/auth/login">Login</a>
+                <a href="/auth/logout">Logout</a>
+                <a href="/auth/register">Register</a>
+            </div>
         </div>
     </header>
     <div class="row-fluid">
