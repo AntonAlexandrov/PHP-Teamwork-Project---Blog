@@ -11,12 +11,17 @@
                 Some shitty content.
             </div>
             <div id="subtitle" class="specElite">
-                {{ isset(Auth::user()->name) ? 'Hello ' . Auth::user()->name : 'Welcome Stranger!'}}
+                @if(isset(Auth::user()->name))
+                    Hello, {{{Auth::user()->name}}}!
+                    <a href="/auth/logout">Logout</a>
+                    @else
+                    Welcome, Stranger!
+                    <a href="/auth/login">Login</a>
+                    <a href="/auth/register">Register</a>
+                    @endif
             </div>
             <div id="subtitle" class="specElite">
-                <a href="/auth/login">Login</a>
-                <a href="/auth/logout">Logout</a>
-                <a href="/auth/register">Register</a>
+
             </div>
         </div>
     </header>
