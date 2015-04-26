@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+.specElite {
+    font-family: 'Special Elite', cursive;
+}
+
+.blur{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-image: url('http://www.whatson.is/wp-content/uploads/2014/12/har_fyrirtaekid_1350x500.jpg');
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -150px;
+    background-attachment: fixed;
+}
+
+#title {
+    font-size: 5em;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#subtitle {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+@media (max-width: 520px) {
+    header {
+        background-image: url('http://www.whatson.is/wp-content/uploads/2014/12/har_fyrirtaekid_1350x500.jpg');
+        min-height: 40vh;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    #title {
+        font-size: 2em;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #subtitle {
+        font-size: 1em;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 5%;
+    }
+}
