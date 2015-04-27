@@ -11,7 +11,30 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', [
+	'as' => 'home',
+	'uses' => 'WelcomeController@index'
+]);
+
+Route::get('articles/{slug}', [
+	'as' => 'article',
+	'uses' => 'WelcomeController@article'
+]);
+
+Route::get('tag/{slug}', [
+	'as' => 'tagged',
+	'uses' => 'WelcomeController@tags'
+]);
+
+Route::get('/admin', [
+	'as' => 'administrate',
+	'uses' => 'AdminController@desktop'
+]);
+
+Route::get('/logout', [
+	'as' => 'logout',
+	'uses' => 'AdminController@logout'
+]);
 
 Route::get('home', 'WelcomeController@index');
 

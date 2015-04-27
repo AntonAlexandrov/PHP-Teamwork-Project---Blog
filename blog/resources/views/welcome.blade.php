@@ -30,9 +30,11 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 @foreach($posts as $p)
-                    <h2 class="text-center">{{$p->title}}</h2>
+                    <a href='articles/{{$p->slug}}'><h2
+                                class="text-center">{{$p->title}}</h2></a>
                     <div align="center">
-                        <img src="{{$p->photo}}" alt=""/>
+                        <a href='articles/{{$p->slug}}'><img
+                                    src="{{$p->photo}}" alt=""/></a>
                     </div>
                     <br />
                     <h5 class="text-justify">
@@ -46,12 +48,12 @@
                         $tags = preg_split('/\s*,\s*/', $p->tags);
                         ?>
                         @foreach($tags as $t)
-                            <label class="label label-primary">{{$t}}</label>
+                            <a href="tag/{{$t}}"><label class="label label-primary">{{$t}}</label></a>
                         @endforeach
                     </div>
                     <br/>
                     <div align="center">
-                        <a href="#" class="btn btn-info">Read more...</a>
+                        <a href='articles/{{$p->slug}}' class="btn btn-info">Read more...</a>
                     </div>
                     <hr/>
                 @endforeach

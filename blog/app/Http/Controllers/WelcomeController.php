@@ -36,4 +36,15 @@ class WelcomeController extends Controller {
 		return view('welcome')->with('posts', $posts);
 	}
 
+	public function article($slug) {
+		$post = Post::findBySlug($slug);
+
+		return view('article') -> with('post', $post);
+	}
+
+	public function tags($tag) {
+		$posts = Post::where('tags', 'LIKE', '%' . $tag . '%')->get();
+
+		return view('tags') -> with('posts', $posts);
+	}
 }
