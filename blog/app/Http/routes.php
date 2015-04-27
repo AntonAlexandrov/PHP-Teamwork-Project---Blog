@@ -27,16 +27,20 @@ Route::get('tag/{slug}', [
 ]);
 
 Route::get('/admin', [
-	'as' => 'administrate',
+	'as' => 'adminpage',
 	'uses' => 'AdminController@desktop'
 ]);
+
+Route::get('admin/posts/{id}/edit', 'AdminController@edit');
+
+Route::post('admin/posts/{id}/refresh', 'AdminController@refresh');
 
 Route::get('/logout', [
 	'as' => 'logout',
 	'uses' => 'AdminController@logout'
 ]);
 
-Route::get('home', 'WelcomeController@index');
+Route::get('home', 'AdminController@desktop');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
