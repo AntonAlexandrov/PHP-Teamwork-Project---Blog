@@ -11,7 +11,7 @@
                 <h2>{{$post->title}}</h2>
                 <hr/>
                 <p class="text-justify">
-                    {{$post->content}}
+                    {!! $post->content !!}
                 </p>
                 <br/>
                 <div class="fb-comments" data-href="http://localhost:8000/articles/{{$post->slug}}"

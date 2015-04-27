@@ -35,12 +35,21 @@ Route::get('admin/posts/{id}/edit', 'AdminController@edit');
 
 Route::post('admin/posts/{id}/refresh', 'AdminController@refresh');
 
+Route::get('admin/posts/{id}/delete', 'AdminController@delete');
+
+Route::get('admin/posts/newPost', [
+	'as' => 'newPost',
+	'uses' =>'AdminController@newPost'
+]);
+
+Route::post('admin/posts/newPost', 'AdminController@createNewPost');
+
 Route::get('/logout', [
 	'as' => 'logout',
 	'uses' => 'AdminController@logout'
 ]);
 
-Route::get('home', 'AdminController@desktop');
+Route::get('/desktop', 'AdminController@desktop');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

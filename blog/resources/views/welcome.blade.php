@@ -38,7 +38,7 @@
                     </div>
                     <br />
                     <h5 class="text-justify">
-                        {{substr($p->content, 0, 150) . '...'}}
+                        {!! substr($p->content, 0, 150) . '...' !!}
                     </h5>
                     <div align="center">
 

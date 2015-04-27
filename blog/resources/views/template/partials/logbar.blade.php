@@ -16,7 +16,7 @@
                 </p>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="fa fa-plus"><i> Create new post</i></a></li>
+                <li><a href="{{route('newPost')}}" class="fa fa-plus"><i> Create new post</i></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa
                     fa-user"></i> {{\Auth::user()->username}} <b class="caret"></b></a>

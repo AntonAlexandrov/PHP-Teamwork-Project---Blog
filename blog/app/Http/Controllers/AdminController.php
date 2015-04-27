@@ -42,4 +42,28 @@ class AdminController extends Controller {
 
 		return \Redirect::route('adminpage');
 	}
+
+	public function newPost() {
+		return view('newPost');
+	}
+
+	public function createNewPost() {
+		$p = new Post();
+
+		$p->title = \Input::get('title');
+		$p->content = \Input::get('content');
+		$p->tags = \Input::get('tags');
+		$p->photo = \Input::get('photo');
+		$p->save();
+
+		return \Redirect::route('adminpage') -> with('alert', 'You created a new post!');
+	}
+
+	public function delete($id) {
+		$post = Post::find($id);
+
+		$post -> delete();
+
+		return \Redirect::route('adminpage');
+	}
 }
