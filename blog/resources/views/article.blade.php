@@ -1,6 +1,7 @@
 @extends('template.main')
 @section('title'){{$post->title}}@endsection
 @section('content')
+    @include('template.partials.main-navbar')
     <div class="row-fluid">
         <div class="container">
             <div class="col-md-2"></div>

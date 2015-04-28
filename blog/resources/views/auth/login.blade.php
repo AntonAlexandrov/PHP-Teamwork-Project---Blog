@@ -1,6 +1,7 @@
 @extends('template.main')
-
+@section('title'){{'Admin login'}}@endsection
 @section('content')
+	@include('template.partials.main-navbar')
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">

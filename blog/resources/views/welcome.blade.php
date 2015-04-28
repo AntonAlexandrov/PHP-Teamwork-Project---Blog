@@ -3,25 +3,13 @@
 @endsection
 @section('content')
     <header>
+        @include('template.partials.main-navbar')
         <div class="blur">
             <div id="title" class="specElite">
                 Team "LAKE MEAD" Blog
             </div>
             <div id="subtitle" class="specElite">
                 Some shitty content.
-            </div>
-            <div id="subtitle" class="specElite">
-                @if(isset(Auth::user()->name))
-                    Hello, {{{Auth::user()->name}}}!
-                    <a href="/auth/logout">Logout</a>
-                    @else
-                    Welcome, Stranger!
-                    <a href="/auth/login">Login</a>
-                    <a href="/auth/register">Register</a>
-                    @endif
-            </div>
-            <div id="subtitle" class="specElite">
-
             </div>
         </div>
     </header>

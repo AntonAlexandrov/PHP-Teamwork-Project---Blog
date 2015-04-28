@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <p class="navbar-text">
-                    <i class="fa fa-dashboard"></i> Admin Panel
+                    <a href="{{route('adminpage')}}"><i class="fa fa-dashboard"></i> Admin Panel</a>
                 </p>
             </ul>
             <ul class="nav navbar-nav navbar-right">
